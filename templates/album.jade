@@ -1,0 +1,27 @@
+doctype html
+html
+  head
+    title= name
+    style.
+      body {
+        margin: 80px;
+      }
+
+      img {
+        display: block;
+        max-width: 640px;
+        max-height: 640px;
+      }
+
+      figure {
+        margin: 0;
+        margin-bottom: 40px;
+      }
+
+      figure:last-child {
+        margin-bottom: 0;
+      }
+  body
+    for photo in photos
+      figure
+        img(src=photo.localPath)
